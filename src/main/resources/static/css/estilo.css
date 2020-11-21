@@ -1,0 +1,26 @@
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+    background-color: #100e17;
+}
+.home {
+    height: 100vh;
+}
+.splash {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* alinhamento horizontal */
+    align-items: center; /* alinhamento vertical */
+}
+.senha-atual {
+    font-size: 5rem;
+    text-decoration: none;
+    color: white;
+}
+.senha-historico {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}

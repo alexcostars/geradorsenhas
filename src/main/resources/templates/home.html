@@ -1,8 +1,20 @@
-<html>
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>Gerador de senhas em Java Web</title> 
+        <title>Gerador de senhas</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'>
+        <link th:href="@{/css/estilo.css}" rel="stylesheet"></link>
     </head>
     <body>
-        <p>Senha gerada: </p>
+        <div class="home">
+            <div class="splash">
+                <a href="/" class="senha-atual" th:text="${senha}"></a>
+            </div>
+            <div th:if="${historico.size() > 1}">
+                <th:block th:each="senhaHistorico : ${historico}">
+                    <div class="texto-centro senha-historico" th:text="${senhaHistorico}"></div>    
+                </th:block>
+            </div>
+        </div>
     </body>
 </html>
